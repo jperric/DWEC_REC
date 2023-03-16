@@ -3,14 +3,14 @@
 
 let number1=parseInt(prompt("Introduce el numero1:"));
 
-while(typeof number1 !=="number" || number1<=0){
+while(isNaN(number1) || number1<=0){
     alert("el numero 1 no ha sido introducido correctamente");
     number1=parseInt(prompt("vuelve a introducir el numero1:"));
 }
 
 let number2=parseInt(prompt("Introduce el numero2:"));
 
-while(typeof number2 !=="number" || number2<=0){
+while(isNaN(number2) || number2<=0){
     alert("el numero 2 no ha sido introducido correctamente");
     number2=parseInt(prompt("vuelve a introducir el numero2:"));
 }
