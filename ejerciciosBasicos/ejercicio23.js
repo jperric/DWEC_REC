@@ -4,9 +4,8 @@
     const espalindromo = frase =>{
 
         frase = frase.toLowerCase(frase);
-      /*   frase= frase.trim(frase); */
       
-      frase = frase.split(' ').join('');
+       frase = frase.split(' ').join('');
 
 
         let fraseinvertida = "";

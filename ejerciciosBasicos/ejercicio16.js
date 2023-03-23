@@ -8,30 +8,17 @@ AAA
 AA
 A */
 
+const dibujo = (letra, num) => {
 
-const dibujo = (letra,num)=>{
- 
-    let mostrar="";
-
+    let mostrar = "";
     for (let index = num; index >= 0; index--) {
-     
-
-        let num2=index;
-
+        let num2 = index;
         for (let index = 0; index < num2; index++) {
-           mostrar= mostrar + letra;
+            mostrar = mostrar + letra;
         }
-        
-        
-
-        mostrar=mostrar + "\n";
-
+        mostrar = mostrar + "\n";
     }
-
-     
-
     return mostrar;
-
 }
 
-console.log(dibujo("A",10));
+console.log(dibujo("A", 10));

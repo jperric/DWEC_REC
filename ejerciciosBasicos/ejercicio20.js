@@ -1,19 +1,17 @@
 /* 20. Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá
 Hola Mundo Hola Mundo Hola Mundo. */
 
-const devolver =(texto)=>{
- 
-    let textodevuelto="";
+const repetirTexto = (texto,veces) => {
 
-for (let index = 0; index < texto.length; index++) {
-  textodevuelto=textodevuelto+texto+"\n";
- 
-    
-}
+  let textodevuelto = "";
 
-return textodevuelto; 
-
+  for (let index = 0; index < veces; index++) {
+    textodevuelto = textodevuelto + texto + "\n";
   }
 
-  console.log(devolver("hola"));
-  console.log(devolver("holaaaa"));
+  return textodevuelto;
+
+}
+
+console.log(repetirTexto("hola",7));
+console.log(repetirTexto("holaaaa",6));

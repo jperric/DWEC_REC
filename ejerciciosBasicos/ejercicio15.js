@@ -1,10 +1,5 @@
 /* 15. Indica si un NIF es válido o no. */
-
-
-
 let characters = ['T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'];
-
-
 const dnivalido = dni =>{
 
 let numerosdni = parseInt(dni.substring(0,8));
