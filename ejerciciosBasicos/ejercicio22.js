@@ -9,6 +9,10 @@ const contrepetidas = (frase, palabra) => {
 
     let cont = 0;
 
+//hacerlo sin bucle for 
+//macht
+
+
     for (let index = frasesepa.length - 1; index >= 0; index--) {
 
         if (frasesepa[index] == palabra) {

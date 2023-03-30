@@ -2,8 +2,8 @@
 “a” o “o”. Realiza el ejercicio con funciones de cadena y con expresiones regulares. */
 
 const comprobarcadena = cadena =>{
-
-const r= new RegExp("^m|^d","");
+                       //.* significa en medio lo que sea      
+const r= new RegExp(/^[md].*[ao]$/);
 
 
 }

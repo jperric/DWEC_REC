@@ -1,23 +1,28 @@
 /* 25. Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en
     un sentido que en otro), pe. miFuncion(2002) devolverá true. */
 
-    const escapicua = (num)=>{
+    const esCapicua = (num)=>{
+
+      if(typeof num != "number") return null;
+
 
         num=num.toString();
-        let numinvertido="";
+        let numarray= num.split("");
+        //Si no le añado las "" se coloca con coma.
+        let numinvertido= numarray.reverse().join("");
 
-        for (let index = num.length-1; index >=0; index--) {
-           numinvertido=numinvertido+num[index];
-            
-        }
 
-       if(num==numinvertido){
-        return'el numero es capicua';
+
+        //OPERADOR TERNARIO
+    /*    if(num==numinvertido){
+        return true;
        }else{
-        return'el numero no es capicua';
-       }
+        return false;
+       } */
 
-    }
+      return (num==numinvertido) ? true : false ;
 
-    console.log(escapicua("2002"));
-    console.log(escapicua("20020"));
+      }
+
+    console.log(esCapicua("hol2"));
+    console.log(esCapicua(2002));
