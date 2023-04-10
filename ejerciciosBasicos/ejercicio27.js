@@ -40,9 +40,6 @@ const calcularparesyimpares = (vectornum) =>{
 //c
 
 const sumadenegativos = (vectornum) =>{
-
-vectornum.reduce()
-
-}
    
-  
+   
+}
